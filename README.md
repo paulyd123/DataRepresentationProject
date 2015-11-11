@@ -66,14 +66,14 @@ Method | Meanings
 ###Querying the Dataset  
 You may query the dataset using the  HTTP rerequest methods and the URL. The response would be in a json format. 
 
-###Example
-*http://galway.ie/playgrounds/[OBJECTID]*   
-###The above would return:
-*http://galway.ie/playgrounds/2*   
+###Example of querying the dataset
+*http://galway.ie/playgrounds/[PLAYGROUND]*   
+###when you replace [PLAYGROUND] with the name of the playground:
+*http://galway.ie/playgrounds/mervuepublicparkplayground*   
 
 
 ###HTTP Requst by Object ID
-GET *http://galway.ie/playgrounds/2*   
+GET *http://galway.ie/playgrounds/mervuepublicparkplayground*   
 
 ###HTTP Response in json
    {
