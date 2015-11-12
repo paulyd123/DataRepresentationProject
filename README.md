@@ -95,6 +95,41 @@ GET *http://galway.ie/playgrounds/mervuepublicparkplayground*
     },
 
 
+## Accessing The Dataset
+#### Receiving a list of all playgrounds in Galway City
+You can receive a list of all the playgrounds in Galway City, using the HTTP POST method, and the following URL:
 
+*http://galway.ie/playgrounds/all*
+
+Here we are using "all" after "/playgrounds/" which will return all of the playgrounds in Galway City
+
+###HTTP Requst by Object ID
+GET *http://galway.ie/playgrounds/all*   
+
+###HTTP Response in json
+
+    {
+        "OBJECTID": "3",
+        "PLAYGROUND": "Lakeshore Drive Playground",
+        "Location": "Renmore, Galway",
+        "SURFACE": "Rubber Wet-pour surface",
+        "PARKING": "Within estate",
+        "OPENHRS": "No restricted opening hours",
+        "TOILETFACI": "No",
+        "EQUIPMENT": " ",
+        "Lat": "53.277",
+        "Long": "-9.028",
+        "EastITM": "531413.082",
+        "NorthITM": "725664.03",
+        "EastIG": "131447.51",
+        "NorthIG": "225634.955"
+    },
+    {
+    ...
+    },
+    {
+    ...
+    },
+    ...
 
 
