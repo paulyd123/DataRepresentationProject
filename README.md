@@ -49,7 +49,7 @@ I deleted the two columns which were of no use which was the X and Y coordinates
 **503** | Service Unavaiable |
 
 ## Example
-Here is my first entry from the "Galway City Playgrounds" dataset which is formatted in json which will show you how the columns are used.
+>Here is my first entry from the "Galway City Playgrounds" dataset which is formatted in json which will show you how the columns are used.
 
     {
         "OBJECTID": "1",
@@ -158,7 +158,7 @@ Then replace [parameter] with what you are looking for.
 
 *http://galwayplaygrounds.ie/playgrounds/?surface=RubberWet-poursurface/*
 
-This would return an all of the playground that provide a rubber wet-pour surface.
+This would return all of the playgrounds that provide a rubber wet-pour surface.
 
 If there isn't any playground with that surface, an empty array is returned.
 
@@ -166,6 +166,20 @@ If there isn't any playground with that surface, an empty array is returned.
 
 *http://galwayplaygrounds.ie/playgrounds/?parking=withinestate*
 
-This would return an all of the playgrounds that have parking within the estate of the playground.
+This would return all of the playgrounds that have parking within the estate of the playground.
 
 If there isn't any parking within the estate, an empty array is returned.
+
+**Example Three**
+
+*http://galwayplaygrounds.ie/playgrounds/?TOILETFACI=yes*
+
+This would return all of the playgrounds that have toilet facilities within the surrounding area of the playground.
+
+#### A list of playgrounds closest to your current location
+
+Perhaps you wanted to find the playgrounds closest to your current location. All you have to do is use the users longitude and latitude, with a POST method, using the following URL:
+
+*http://galwayplaygrounds.ie/playgrounds/closest-long-lat/*
+
+This will return all the playgrounds starting with the playground that is closest to the longitude and latitude coordinates provided
