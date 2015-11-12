@@ -144,4 +144,20 @@ GET *http://galwayplaygrounds.ie/all*
     {...},
     ...
   
+### Accessing list of playgrounds using filters
+You may request a list of parks using a filter eg. All playgrounds with parking etc using the HTTP GET method.
+Here is a URL example of the address you would use to achieve this.
 
+*http://galwayplaygrounds.ie/playgrounds/?[filter]=[parameter]*
+
+We now replace [filter] with a dataset field eg. Location, surface etc.
+
+Then replace [parameter] with what you are looking for.
+
+**Example One**
+
+*http://galwayplaygrounds.ie/playgrounds/?surface=RubberWet-poursurface/*
+
+This would return an all of the parks that provide a rubber wet-pour surface.
+
+If there isn't any park with that surface, an empty array is returned.
