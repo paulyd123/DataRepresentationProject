@@ -28,11 +28,25 @@ Heading | Meaning
 "**NorthIG**" | "North Irish Grid Reference number"
 
 ##
-Below is a link to the Irish Transverse Mercator (ITM), otherwise known as the geographic coordinate system for Ireland
+Below is a link to the Irish Transverse Mercator (ITM), otherwise known as the geographic coordinate system for Ireland and also the Irish Grid Reference System which is a system of geographic grid references commonly used in Ireland (both Northern Ireland and the Republic of Ireland).
+
 *https://en.wikipedia.org/wiki/Irish_Transverse_Mercator*
+
+*https://en.wikipedia.org/wiki/Irish_grid_reference_system*
  
 
 I deleted the two columns which were of no use which was the X and Y coordinates as there is already a latitude and longitude included in the columns. However I also deleted the colums 'SPECIANNEE' as I didn't understand what it meant.
+
+
+##Status Code
+| Code | Description |    
+|------|:--------|     
+**200** | Ok | 
+**202** | Accepted  |  
+**400** | Bad Request | 
+**404** | Not Found  |  
+**405** | Method Not Allowed | 
+**503** | Service Unavaiable |
 
 ## Example
 Here is my first entry from the "Galway City Playgrounds" dataset which is formatted in json which will show you how the columns are used.
@@ -53,6 +67,8 @@ Here is my first entry from the "Galway City Playgrounds" dataset which is forma
         "EastIG": "133426.244",
         "NorthIG": "226658.92"
     },
+
+
   
 ##HTTP Request Methods  
 Method | Meanings
@@ -67,13 +83,13 @@ Method | Meanings
 You may query the dataset using the  HTTP rerequest methods and the URL. The response would be in a json format. 
 
 ###Example of querying the dataset
-*http://galway.ie/playgrounds/[PLAYGROUND]*   
+*http://galwayplaygrounds.ie/[PLAYGROUND]*   
 ###when you replace [PLAYGROUND] with the name of the playground:
-*http://galway.ie/playgrounds/mervuepublicparkplayground*   
+*http://galwayplaygrounds.ie/mervuepublicparkplayground*   
 
 
 ###HTTP Requst by Object ID
-GET *http://galway.ie/playgrounds/mervuepublicparkplayground*   
+GET *http://galwayplaygrounds.ie/mervuepublicparkplayground*   
 
 ###HTTP Response in json
    {
@@ -99,12 +115,12 @@ GET *http://galway.ie/playgrounds/mervuepublicparkplayground*
 #### Receiving a list of all playgrounds in Galway City
 You can receive a list of all the playgrounds in Galway City, using the HTTP POST method, and the following URL:
 
-*http://galway.ie/playgrounds/all*
+*http://galwayplaygrounds.ie/all*
 
 Here we are using "all" after "/playgrounds/" which will return all of the playgrounds in Galway City
 
 ###HTTP Requst by Object ID
-GET *http://galway.ie/playgrounds/all*   
+GET *http://galwayplaygrounds.ie/all*   
 
 ###HTTP Response in json
 
@@ -124,12 +140,8 @@ GET *http://galway.ie/playgrounds/all*
         "EastIG": "131447.51",
         "NorthIG": "225634.955"
     },
-    {
+    {...},
+    {...},
     ...
-    },
-    {
-    ...
-    },
-    ...
-
+  
 
