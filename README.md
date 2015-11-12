@@ -7,8 +7,10 @@ This project provides the design and documentation for the dataset "Galway City 
 
 The **Playgrounds in Galway City** Dataset contains information and the whereabouts of all of the public playgrounds that can be found in Galway City.
 
+The type of people that I could imagine using this API would be parents with small children
+
 ## Information about the Playgrounds in the Galway City Playgrounds dataset
-The dataset that I have used was originally a .csv file however I transferred it to json using an online application which has made it easier to use. The dataset contains 15 entries. Every column has 17 columns which are as follows:
+The dataset that I have used was originally a .csv file however I transferred it to json using an online application which has made it easier to use. The dataset contains 30 entries. Every column has 17 columns which are as follows:
   
 Heading | Meaning 
  ------|---------
