@@ -29,7 +29,7 @@ Heading | Meaning
 "**EastIG**" | "East Irish Grid Reference number",
 "**NorthIG**" | "North Irish Grid Reference number"
 
-##
+
 Below is a link to the Irish Transverse Mercator (ITM), otherwise known as the geographic coordinate system for Ireland and also the Irish Grid Reference System which is a system of geographic grid references commonly used in Ireland (both Northern Ireland and the Republic of Ireland).
 
 *https://en.wikipedia.org/wiki/Irish_Transverse_Mercator*
